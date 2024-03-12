@@ -1,0 +1,66 @@
+[
+    {
+        "Name": "bridge",
+        "Id": "00229cab28b29ce76e7bdfa8d71d7540a4826bafb8c5b898f2c9c85a70a106b6",
+        "Created": "2024-03-06T04:25:44.594269711Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "91d1fa17963ecc6733eac15c7db26271a9fe6b50fe6610ae8bd97520544a3434": {
+                "Name": "mysql8",
+                "EndpointID": "e188d6d6836cb25bc87314b5292902a3c537f26268fb31db11fd74b402f9633a",
+                "MacAddress": "02:42:ac:11:00:02",
+                "IPv4Address": "172.17.0.2/16",
+                "IPv6Address": ""
+            },
+            "b5595b68cf1ed4b21776d85d48f6cc28e4a6a3cbd253478230f678f6d5f8e032": {
+                "Name": "mysql8_05",
+                "EndpointID": "68d31cb7979acabfd71f6ff59aada6a297f94a137df02174cbe58bfeedd1c734",
+                "MacAddress": "02:42:ac:11:00:05",
+                "IPv4Address": "172.17.0.5/16",
+                "IPv6Address": ""
+            },
+            "ca4ead1cd73038a044822dda125b73b48664e7ce6c32bd5bf518456733371140": {
+                "Name": "mysql8_04",
+                "EndpointID": "f01b1a21ec6eec7da22e801c09895c3958c35cd558990bc1ed13af80c5d5447b",
+                "MacAddress": "02:42:ac:11:00:04",
+                "IPv4Address": "172.17.0.4/16",
+                "IPv6Address": ""
+            },
+            "f059cc6027b5189a1110148cf8b179c0e0e962bc0932ba9e50d9b53c5421ff4e": {
+                "Name": "nacos",
+                "EndpointID": "4af254c7e0e81044d71e7d35c236c8ada66e06324c6a031f7977a8af42e76fba",
+                "MacAddress": "02:42:ac:11:00:03",
+                "IPv4Address": "172.17.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",
+            "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+            "com.docker.network.bridge.name": "docker0",
+            "com.docker.network.driver.mtu": "1500"
+        },
+        "Labels": {}
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "Name": "my-network",
+        "Id": "94d59f5f67ab9045df8541b8d8a07a791db2f237032d29b02d3977272aef75dd",
+        "Created": "2023-08-14T15:53:34.2325658Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.19.0.0/16",
+                    "Gateway": "172.19.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "b5595b68cf1ed4b21776d85d48f6cc28e4a6a3cbd253478230f678f6d5f8e032": {
+                "Name": "mysql8_05",
+                "EndpointID": "4dee37af496db253d671c57b9a2645c93cdb3d9248f2f41ca224c06ed966bfb3",
+                "MacAddress": "02:42:ac:13:00:03",
+                "IPv4Address": "172.19.0.3/16",
+                "IPv6Address": ""
+            },
+            "ca4ead1cd73038a044822dda125b73b48664e7ce6c32bd5bf518456733371140": {
+                "Name": "mysql8_04",
+                "EndpointID": "0ef8fdc73b9beff83bf805e6bc87b668bfc3cbdab8d824bb212ad76cb0475d08",
+                "MacAddress": "02:42:ac:13:00:02",
+                "IPv4Address": "172.19.0.2/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]

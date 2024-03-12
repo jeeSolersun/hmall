@@ -1,0 +1,7 @@
+server:
+  port: 8083
+hm:
+  swagger:
+    title: "交易系统"
+    desc: "交易系统"
+    package: com.hmall.trade.controller

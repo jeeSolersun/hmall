@@ -1,0 +1,7 @@
+server:
+  port: 8082
+hm:
+  swagger:
+    title: "购物车"
+    desc: "购物车"
+    package: com.hmall.cart.controller
